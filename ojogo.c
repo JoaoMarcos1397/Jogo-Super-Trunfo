@@ -123,7 +123,20 @@ int main(){
     superpoder1 = (float) habitantes01 + area01 + pib01 + turisticos01 + pib01 + media1inv;
     superpoder2 = (float) habitantes02 + area02 + pib02 + turisticos02 + pib02 + media2inv;
     printf("Super Poder: %d\n", superpoder1 > superpoder2);
+    
+    printf("\n");
+//printf - impressão comparação de atributos
+    printf("***Comparação de atributos***\n");
+    printf("\n");
+    printf("**Atributo População**\n");
+    printf("Carta 01 - %s: %lld\n", cidade01, habitantes01);
+    printf("Carta 02 - %s: %lld\n", cidade02, habitantes02);
 
+    if(habitantes01 > habitantes02){
+        printf("Resultado: A carta 01 (%s) venceu\n", cidade01);
+    } else {
+        printf("Resultado: A carta 02 (%s) venceu\n", cidade02);
+    }
 
     return 0;
 
